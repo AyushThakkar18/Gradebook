@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Names</title>
+    <style> 
+    ul li a {
+        display: inline-block;
+        background-color: #4CAF50; /* set button color to green */
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      ul li a:hover {
+        background-color: #2d5d2f; /* set button color to darker shade of green on hover */
+      }
+    </style>
+  
+</head>
+<body>
+    <h1>List of Names</h1>
+    <ul>
+        {% for name in names %}
+        <li><a href="/students/{{ name }}">{{ name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

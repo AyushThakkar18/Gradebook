@@ -1,0 +1,23 @@
+<head>
+  <title>Gradebook - Add Grades</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+{% block content %}
+  <h1>Add Grades</h1>
+
+  <form method="POST">
+    <label for="grade_name">Grade Name:</label>
+    <input type="text" id="grade_name" name="grade_name" required>
+
+    <h2>List of Students</h2>
+    {% for student in students %}
+        <li>
+      <label for="{{ student }}">{{ student }}</label>
+      <input type="number" id="{{ student }}" name="{{ student }}">
+      </li>
+    {% endfor %}
+
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}
