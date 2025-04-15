@@ -1,6 +1,5 @@
 # Gradebook
 
-MCS 275 Spring 2023 Project 4 by Ayush Thakkar
 
 ## Description
 This is a Python Flask application that provides a simple interface to manage student grades in a SQLite database.
@@ -30,12 +29,3 @@ what you did, as compared to what you adapted from other sources, then
 you haven't written enough.]
 I have created the whole project by myself including the all the frontend operations in Flask and all the backend querries of Sqlite database. 
 
-## Sources and credits
-
-
-
-Although I have wrote this code all by myself, but still have consulted through few resources.
-
-(1)  The whole app.route(("/edit/<assignment_name>", methods=["GET", "POST"])) and @app.route('/input', methods=['GET', 'POST']) was adapted and modified from the bugreport.py https://github.com/daviddumas/mcs275spring2023/blob/main/samplecode/html/bugreport/bugreport.py which professor Dumas created in class. It helped me understand how to get input from the user, work on the input, and how to update the database according to the input
-
-(2)  Nirali Thakkar- She reviewed and suggested all the designs I made using CSS and also helped me solve some bugs related to it
